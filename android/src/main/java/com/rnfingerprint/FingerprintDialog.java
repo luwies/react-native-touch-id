@@ -106,7 +106,6 @@ public class FingerprintDialog extends DialogFragment implements FingerprintHand
     @Override
     public void onPause() {
         super.onPause();
-        dismiss();
         if (this.isAuthInProgress) {
             this.mFingerprintHandler.endAuth();
             this.isAuthInProgress = false;
