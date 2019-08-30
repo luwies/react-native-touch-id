@@ -26,7 +26,7 @@ public class FingerprintAuthModule extends ReactContextBaseJavaModule implements
     public static boolean inProgress = false;
 
     public FingerprintAuthModule(final ReactApplicationContext reactContext) {
-        super(reactContext)
+        super(reactContext);
 
         reactContext.addLifecycleEventListener(this);
     }
