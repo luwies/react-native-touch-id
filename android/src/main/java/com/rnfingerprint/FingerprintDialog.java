@@ -169,7 +169,7 @@ public class FingerprintDialog extends DialogFragment implements FingerprintHand
         if (this.dialogCallback != null) {
             this.dialogCallback.onAuthenticated();
         }
-        dismiss();
+        dismissAllowingStateLoss();
     }
 
     @Override
@@ -186,6 +186,6 @@ public class FingerprintDialog extends DialogFragment implements FingerprintHand
         if (this.dialogCallback != null) {
             this.dialogCallback.onCancelled();
         }
-        dismiss();
+        dismissAllowingStateLoss();
     }
 }
